@@ -2,8 +2,29 @@
 ![Inital Concept Sketch](./Images/BreathReminderDrawing.png)
 
 # Code Concept
-pusedo code here
-Diagram with microbit and values
+```
+When Button A Pressed
+    Start waiting for breath
+
+forever loop
+    measure how much movement in the Z axis
+
+    check movement speed (check if breath)
+        if first breath
+            record time of first breath
+        if second breath
+            record how long first breath - second breath took.
+    record time of last/current breath
+
+    else if no movement
+        if time taken to breath > time taken between first and second breath
+            alert person to breath
+
+When Button B pressed
+    Stop Program
+```
+
+
 
 # Code Progress
 ## Version 1
@@ -30,7 +51,7 @@ basic.forever(function () {
 ```
 used to get variables of speed for breathing, used for inital speed calculations and filtering.
 
-(image of speed waves from website here)
+![Inital Speed Filter](./Images/BreathingChart.png)
 
 ## Version 2
 ```
