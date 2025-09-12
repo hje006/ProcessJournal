@@ -1,5 +1,5 @@
 # Initial Concept
-[!Inital Concept Sketch](./Images/BreathReminderDrawing.png)
+![Inital Concept Sketch](./Images/BreathReminderDrawing.png)
 
 # Code Concept
 pusedo code here
