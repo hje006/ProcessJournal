@@ -115,39 +115,41 @@ let THRESHOLD = 80
 let RANGE = 40
 // Main loop / Function
 basic.forever(function () {
-    // measure change in Z acceleration
-    currentZ = input.acceleration(Dimension.Z)
-    speed = currentZ - lastZ
-    lastZ = currentZ
-    absSpeed = Math.abs(speed)
-```
-```
-    // breathing detected if speed is in range
-    if (absSpeed >= THRESHOLD - RANGE && absSpeed <= THRESHOLD + RANGE) {
-        if (waitingForBreath) {
-            if (!(isFirstBreath)) {
-                // first breath detected
-                firstBreathTime = input.runningTime()
-                isFirstBreath = true
-            } else {
-                // second breath → calculate time between breaths
-                breathTIME = input.runningTime() - firstBreathTime
-                isFirstBreath = false
+    if (waitingForBreath == true) {
+        // measure change in Z acceleration
+        currentZ = input.acceleration(Dimension.Z)
+        speed = currentZ - lastZ
+        lastZ = currentZ
+        absSpeed = Math.abs(speed)
+    ```
+    ```
+        // breathing detected if speed is in range
+        if (absSpeed >= THRESHOLD - RANGE && absSpeed <= THRESHOLD + RANGE) {
+            if (waitingForBreath) {
+                if (!(isFirstBreath)) {
+                    // first breath detected
+                    firstBreathTime = input.runningTime()
+                    isFirstBreath = true
+                } else {
+                    // second breath → calculate time between breaths
+                    breathTIME = input.runningTime() - firstBreathTime
+                    isFirstBreath = false
+                }
+            }
+            // update timestamp of last detected breath
+            lastBreathTime = input.runningTime()
+            basic.showIcon(IconNames.Heart)
+        } else {
+            // no breath detected
+            basic.showIcon(IconNames.SmallDiamond)
+            // check if too long has passed without a breath
+            if (breathTIME > 0 && input.runningTime() - lastBreathTime > breathTIME) {
+                // X
+                basic.showIcon(IconNames.No)
             }
         }
-        // update timestamp of last detected breath
-        lastBreathTime = input.runningTime()
-        basic.showIcon(IconNames.Heart)
-    } else {
-        // no breath detected
-        basic.showIcon(IconNames.SmallDiamond)
-        // check if too long has passed without a breath
-        if (breathTIME > 0 && input.runningTime() - lastBreathTime > breathTIME) {
-            // X
-            basic.showIcon(IconNames.No)
-        }
+        basic.pause(200)
     }
-    basic.pause(200)
 })
 ```
 adding a time filter, detecting for time taken to  breath, so if it exceeds time of the first 2 breaths itll alert the user to breath.
