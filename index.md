@@ -1,5 +1,23 @@
-# First Entry
-text
+# Initial Concept
+[!Inital Concept Sketch](./images/BreathReminderDrawing.png)
 
-# second entry
-[!about image for disabled](./images/whatever.png
+# Code Concept
+pusedo code here
+Diagram with microbit and values
+
+# Code Progress
+## Version 1
+code and comments
+whats new
+
+## Version 2
+code and comments
+whats new
+
+## Version 3
+code and comments
+whats new
+
+# Prototype
+image here
+whats new
