@@ -156,4 +156,7 @@ adding a time filter, detecting for time taken to  breath, so if it exceeds time
 
 # Prototype
 image here
-whats new
+
+[![Watch the video](https://img.youtube.com/vi/BINYAAp0CfQ/0.jpg)](https://youtu.be/BINYAAp0CfQ)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BINYAAp0CfQ" frameborder="0" allowfullscreen></iframe>
