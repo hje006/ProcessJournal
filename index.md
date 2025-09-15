@@ -155,8 +155,8 @@ basic.forever(function () {
 adding a time filter, detecting for time taken to  breath, so if it exceeds time of the first 2 breaths itll alert the user to breath.
 
 # Prototype
-image here
-
-[![Watch the video](https://img.youtube.com/vi/BINYAAp0CfQ/0.jpg)](https://youtu.be/BINYAAp0CfQ)
+![Pocket and strap](./Images/P1.jpg)
+![Pocket and strap togeather](./Images/P2.jpg)
+![Open Strap](./Images/P3.jpg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BINYAAp0CfQ" frameborder="0" allowfullscreen></iframe>
