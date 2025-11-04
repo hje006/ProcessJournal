@@ -154,9 +154,21 @@ basic.forever(function () {
 ```
 adding a time filter, detecting for time taken to  breath, so if it exceeds time of the first 2 breaths itll alert the user to breath.
 
-# Prototype
+# Prototype 1
 ![Pocket and strap](./Images/P1.jpg)
 ![Pocket and strap togeather](./Images/P2.jpg)
 ![Open Strap](./Images/P3.jpg)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BINYAAp0CfQ" frameborder="0" allowfullscreen></iframe>
+
+# Prototype 2
+
+working prototype 2 with speaker instead of flashing lights.
+<iframe width="560" height="315" src="https://youtu.be/ZPAEZ9EW4tY" frameborder="0" allowfullscreen></iframe>
+
+ideal wiring setup.
+![Ideal wiring](./Images/wiring.jpg)
+
+3D container to fit all parts in a compact design.
+![3Dcontainer](container2.png)
+![container with all parts to show how it would fit.](container.png)
