@@ -164,10 +164,10 @@ adding a time filter, detecting for time taken to  breath, so if it exceeds time
 # Prototype 2
 
 working prototype 2 with speaker instead of flashing lights.
-<iframe width="560" height="315" src="https://youtu.be/ZPAEZ9EW4tY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/ZPAEZ9EW4tY" frameborder="0" allowfullscreen></iframe>
 
 ideal wiring setup.
-![Ideal wiring](./Images/wiring.jpg)
+![Ideal wiring](./Images/wiring.png)
 
 3D container to fit all parts in a compact design.
 ![3Dcontainer](container2.png)
